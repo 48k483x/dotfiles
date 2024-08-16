@@ -1,9 +1,9 @@
-# (Decay, decayce variant) Color scheme for z0mbi3 Rice
+# (Decay, decayce variant) Color scheme for 48k483x Rice
 
 # Default colors
 [colors.primary]
-background = "#000000"
-foreground = "#a5b6cf"
+background = "#100C08"
+foreground = "#E0FFFF"
 
 # Cursor colors
 [colors.cursor]

@@ -107,7 +107,7 @@ bindsym $mod+v split v
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
+#bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
@@ -203,6 +203,8 @@ bindsym $mod+r mode "resize"
 # This is to hide the polybar
 bindsym $mod+h exec --no-startup-id ~/.config/polybar/hideBar.sh
 
+# This is to take an screenshot
+bindsym $mod+s exec --no-startup-id scrot ~/Pictures/screenshot_%Y-%m-%d-%H%M%S.png
 
 # Gaps configuration (requires i3-gaps)
 gaps inner 10
@@ -238,9 +240,10 @@ for_window [class="Lxappearance"] floating enable
 # assign [class="code-oss"] $ws3
 
 # Autostart applications
+exec_always --no-startup-id  echo -e '\e[3 q'
 exec_always --no-startup-id ~/.config/polybar//lunch.sh
 exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
-exec --no-startup-id feh --bg-scale /home/void_id/dotfiles/config/bspwm/rices/daniela/walls/wall-02.webp
+exec --no-startup-id  feh --bg-scale /home/void_id/Downloads/okabe.png
 for_window [class="Rofi"] floating enable
 
 # Set a minimum and maximum size for windows
